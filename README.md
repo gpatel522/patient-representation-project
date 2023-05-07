@@ -36,4 +36,12 @@ To setup environment
     python -m pip install numpy==1.13.0 (some complains but code works)
     pip install h5py
 4. Modify the line 'os.environ['DATA_ROOT'] = ...' in the main of every class to point it to the data folder locally on your machine.
-5. 
+
+
+Python 3
+1. python3 -m pip install tensorflow
+2. conda create --name py3 python=3.6
+3. conda activate py3
+4. pip install numpy scikit-learn keras theano
+5. pip install nltk word2vec h5py pandas gensim
+6. python3 -m pip install tensorflow==1.15
