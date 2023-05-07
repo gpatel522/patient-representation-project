@@ -1,7 +1,7 @@
 import os
 
-input_directory = 'D:/preCui'
-output_directory = r'C:\Users\gpate\Dropbox\Coursera\DL_in_Health\data\MimicIII\Patients\Cuis'
+input_directory = 'D:/outputFromCtakes'
+output_directory = r'..\data\MimicIII\Patients\Cuis'
 
 def read_cuis(file_name):
     """Return file as a list of CUIs"""

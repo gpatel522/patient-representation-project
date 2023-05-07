@@ -2,7 +2,7 @@ import os
 import psycopg2
 import time
 
-output_directory = '/Users/gpatel/Library/CloudStorage/Dropbox/Coursera/DL_in_Health/data/MimicIII/Patients/notes/'
+output_directory = '../data/MimicIII/Patients/notes/'
 
 
 def connect():

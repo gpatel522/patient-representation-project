@@ -1,7 +1,7 @@
 import os
 
-input_directory = '/Users/gpatel/Library/CloudStorage/Dropbox/Coursera/DL_in_Health/data/MimicIII/Patients/Cuis/'
-output_directory = '/Users/gpatel/Library/CloudStorage/Dropbox/Coursera/DL_in_Health/data/MimicIII/Patients/'
+input_directory = '../data/MimicIII/Patients/Cuis/'
+output_directory = '../data/MimicIII/Patients/'
 
 cui_set = set()
 

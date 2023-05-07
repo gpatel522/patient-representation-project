@@ -36,8 +36,8 @@ import warnings
 
 warnings.warn = warn
 
-RESULTS_FILE = '/Users/gpatel/Library/CloudStorage/Dropbox/Coursera/DL_in_Health/data/MimicIII/Results/Model/results.txt'
-MODEL_FILE = '/Users/gpatel/Library/CloudStorage/Dropbox/Coursera/DL_in_Health/data/MimicIII/Results/Model/model.h5'
+RESULTS_FILE = '../data/MimicIII/Results/Model/results.txt'
+MODEL_FILE = '../data/MimicIII/Results/Model/model.h5'
 
 
 def print_config(cfg):
@@ -78,7 +78,7 @@ def get_model(cfg, init_vectors, num_of_features):
 
 if __name__ == "__main__":
 
-    os.environ['DATA_ROOT'] = '/Users/gpatel/Library/CloudStorage/Dropbox/Coursera/DL_in_Health/data/'
+    os.environ['DATA_ROOT'] = '../data/'
 
     cfg = ConfigParser.ConfigParser()
     cfg.read(sys.argv[1])

@@ -22,7 +22,7 @@ if __name__ == "__main__":
     # print("similar to ", findSimilarWords, data)
 
     lines = []
-    with open('/Users/gpatel/Library/CloudStorage/Dropbox/Coursera/DL_in_Health/data/MimicIII/Patients/mimic-cuis.txt') as fin:
+    with open('../data/MimicIII/Patients/mimic-cuis.txt') as fin:
         for line in fin:
             lines.append(line.strip())
             print(line.strip())

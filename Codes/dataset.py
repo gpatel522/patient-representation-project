@@ -5,9 +5,9 @@ import ConfigParser, os, nltk, pandas, sys
 sys.dont_write_bytecode = True
 import glob, string, collections, operator, pickle
 
-ALPHABET_FILE = '/Users/gpatel/Library/CloudStorage/Dropbox/Coursera/DL_in_Health/data/MimicIII/Source/Model/alphabet.txt'
-ALPHABET_PICKLE = '/Users/gpatel/Library/CloudStorage/Dropbox/Coursera/DL_in_Health/data/MimicIII/Source/Model/alphabet.p'
-CODE_FREQ_FILE = '/Users/gpatel/Library/CloudStorage/Dropbox/Coursera/DL_in_Health/data/MimicIII/Source/Model/codes.txt'
+ALPHABET_FILE = '../data/MimicIII/Source/Model/alphabet.txt'
+ALPHABET_PICKLE = '../data/MimicIII/Source/Model/alphabet.p'
+CODE_FREQ_FILE = '../data/MimicIII/Source/Model/codes.txt'
 DIAG_ICD9_FILE = 'DIAGNOSES_ICD.csv'
 PROC_ICD9_FILE = 'PROCEDURES_ICD.csv'
 CPT_CODE_FILE = 'CPTEVENTS.csv'
