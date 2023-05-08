@@ -267,7 +267,8 @@ def run_evaluation_all_diseases():
   print 'average r =', numpy.mean(rs)
   print 'average f1 =', numpy.mean(f1s)
 
+
 if __name__ == "__main__":
-  os.environ['DATA_ROOT'] = '/Users/gpatel/Library/CloudStorage/Dropbox/Coursera/DL_in_Health/data/'
+  os.environ['DATA_ROOT'] = '../data/'
 
   run_evaluation_all_diseases()

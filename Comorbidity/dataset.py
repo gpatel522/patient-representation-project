@@ -11,7 +11,7 @@ import glob, string, collections, operator
 # can be used to turn this into a binary task
 LABEL2INT = {'Y':0, 'N':1, 'Q':2, 'U':3}
 # file to log alphabet entries for debugging
-ALPHABET_FILE = 'Model/alphabet.txt'
+ALPHABET_FILE = '../data/MimicIII/Source/Model/alphabet.txt'
 
 class DatasetProvider:
   """Comorboditiy data loader"""
@@ -50,6 +50,7 @@ class DatasetProvider:
     # count tokens in the entire corpus
     token_counts = collections.Counter()
 
+    print(self.corpus_path)
     for f in os.listdir(self.corpus_path):
       file_path = os.path.join(self.corpus_path, f)
       file_feat_list = utils.read_cuis(file_path)

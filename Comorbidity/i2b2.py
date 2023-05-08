@@ -59,7 +59,8 @@ def parse_standoff_vectorized(xml, task, exclude=set()):
             doc2labels[id] = [0] * len(dis2int)
 
           disease_label = doc_elem.attrib['judgment']
-          doc2labels[id][disease_index] = to_int[disease_label]
+          #print(id, disease_index, 'disease_label', disease_label)
+          doc2labels[id][disease_index] = disease_label
 
   return doc2labels
 
@@ -91,9 +92,9 @@ def write_notes_to_files(notes_xml, output_dir):
 
 if __name__ == "__main__":
 
-  base = '/Users/Dima/Loyola/Data/'
-  notes = 'Comorbidity/Xml/obesity_patient_records_test.xml'
-  xml = 'Comorbidity/Xml/obesity_standoff_annotations_test.xml'
+  base = '../data/'
+  notes = 'i2b2/obesity_patient_records_test.xml'
+  xml = 'i2b2/obesity_standoff_annotations_test.xml'
   outdir = 'Comorbidity/Text/Test/'
 
   annot_xml = os.path.join(base, xml)

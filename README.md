@@ -24,16 +24,15 @@ To setup environment
 2. Install Python 2.7 (In terminal run these commands)
     conda create --name py2 python=2.7
     conda activate py2
-3. I installed python, keras, scikit the latest package so had to downgrade to match what author used.
-    python -m pip install numpy==1.13.0
-    python -m pip install scikit-learn==0.19.1
-    python -m pip install keras==2.0.4
-    python -m pip install theano==0.9.0
-    python -m pip install tensorflow==1.0.0
-    pip install pandas
-    PyCharm install nltk
-    PyCharm install word2vec
-    python -m pip install numpy==1.13.0 (some complains but code works)
-    pip install h5py
+3. It installed python, keras, scikit the latest package so had to downgrade to match what author used.
+    * python -m pip install numpy==1.13.0
+    * python -m pip install scikit-learn==0.19.1
+    * python -m pip install keras==2.0.4
+    * python -m pip install theano==0.9.0
+    * python -m pip install tensorflow==1.0.0
+    * pip install pandas
+    * pip install h5py
+    * PyCharm install nltk
+    * PyCharm install gensim
+    * python -m pip install numpy==1.13.0 (sometimes installing pandas upgrades numpy. It complains but code works)
 4. Modify the line 'os.environ['DATA_ROOT'] = ...' in the main of every class to point it to the data folder locally on your machine.
-5. 
